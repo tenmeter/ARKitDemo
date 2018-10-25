@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <ARSCNViewDelegate>
+@interface ViewController () <ARSCNViewDelegate,ARSessionDelegate>
 
 @property (nonatomic, strong) IBOutlet ARSCNView *sceneView;
 
@@ -19,18 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Set the view's delegate
     self.sceneView.delegate = self;
-    
-    // Show statistics such as fps and timing information
-    self.sceneView.showsStatistics = YES;
-    
-    // Create a new scene
-    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
-    
-    // Set the scene to the view
-    self.sceneView.scene = scene;
+    self.sceneView.session.delegate = self;
+    [self setupCamera];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -38,9 +29,21 @@
     
     // Create a session configuration
     ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
-
+    configuration.planeDetection = ARPlaneDetectionHorizontal | ARPlaneDetectionVertical;
     // Run the view's session
     [self.sceneView.session runWithConfiguration:configuration];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    if (!ARWorldTrackingConfiguration.isSupported) {
+        UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"ARKit" message:@" ARKit is not available on this device. For apps that require ARKit for core functionality, use the `arkit` key in the key in the `UIRequiredDeviceCapabilities` section of the Info.plist to prevent the app from installing. (If the app can't be installed, this error can't be triggered in a production scenario.) In apps where AR is an additive feature, use `isSupported` to determine whether to show UI for launching AR experiences." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *confrimAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [controller dismissViewControllerAnimated:YES completion:nil];
+        }];
+        
+        [controller addAction:confrimAction];
+        [self.navigationController presentViewController:controller animated:YES completion:nil];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -50,12 +53,30 @@
     [self.sceneView.session pause];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+- (void)setupCamera{
+    if (!self.sceneView.pointOfView.camera) {
+        return;
+    }
+    
+    SCNCamera *camera = self.sceneView.pointOfView.camera;
+    camera.wantsHDR = YES;
+    camera.exposureOffset = -1;   //曝光偏移
+    camera.minimumExposure = -1;   //最小的曝光偏移
+    camera.maximumExposure = 3;    //最大的曝光偏移
 }
 
 #pragma mark - ARSCNViewDelegate
+
+- (void)renderer:(id<SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor{
+    if (![anchor isKindOfClass:[ARPlaneAnchor class]]) {
+        return;
+    }
+    
+    ARPlaneAnchor *planeAnchor = (ARPlaneAnchor *)anchor;
+    
+    
+    
+}
 
 /*
 // Override to create and configure nodes for anchors added to the view's session.

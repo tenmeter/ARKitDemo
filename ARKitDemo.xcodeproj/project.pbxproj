@@ -8,26 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		71DBA6C12159CCE600E6B93C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBA6C02159CCE600E6B93C /* AppDelegate.m */; };
-		71DBA6C32159CCE600E6B93C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DBA6C22159CCE600E6B93C /* art.scnassets */; };
 		71DBA6C62159CCE600E6B93C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBA6C52159CCE600E6B93C /* ViewController.m */; };
 		71DBA6C92159CCE600E6B93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DBA6C72159CCE600E6B93C /* Main.storyboard */; };
-		71DBA6CB2159CCE900E6B93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DBA6CA2159CCE900E6B93C /* Assets.xcassets */; };
 		71DBA6CE2159CCE900E6B93C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DBA6CC2159CCE900E6B93C /* LaunchScreen.storyboard */; };
 		71DBA6D12159CCE900E6B93C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBA6D02159CCE900E6B93C /* main.m */; };
+		71DBA6DA2159CD3E00E6B93C /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DBA6D82159CD3E00E6B93C /* Models.scnassets */; };
+		71DBA6DB2159CD3E00E6B93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DBA6D92159CD3E00E6B93C /* Assets.xcassets */; };
+		71DBA6E22159CDDD00E6B93C /* VirtualObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBA6E12159CDDD00E6B93C /* VirtualObject.m */; };
+		71DBA6E52159DF5800E6B93C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBA6E42159DF5800E6B93C /* Utilities.m */; };
+		71EAD4D6216C8799005D2B83 /* FocusSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EAD4D5216C8799005D2B83 /* FocusSquare.m */; };
+		71EAD4D9216C884F005D2B83 /* Segment.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EAD4D8216C884F005D2B83 /* Segment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71DBA6BC2159CCE600E6B93C /* ARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DBA6BF2159CCE600E6B93C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71DBA6C02159CCE600E6B93C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		71DBA6C22159CCE600E6B93C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		71DBA6C42159CCE600E6B93C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		71DBA6C52159CCE600E6B93C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		71DBA6C82159CCE600E6B93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		71DBA6CA2159CCE900E6B93C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71DBA6CD2159CCE900E6B93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71DBA6CF2159CCE900E6B93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DBA6D02159CCE900E6B93C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71DBA6D82159CD3E00E6B93C /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		71DBA6D92159CD3E00E6B93C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71DBA6E02159CDDD00E6B93C /* VirtualObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualObject.h; sourceTree = "<group>"; };
+		71DBA6E12159CDDD00E6B93C /* VirtualObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirtualObject.m; sourceTree = "<group>"; };
+		71DBA6E32159DF5800E6B93C /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		71DBA6E42159DF5800E6B93C /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		71EAD4D4216C8799005D2B83 /* FocusSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusSquare.h; sourceTree = "<group>"; };
+		71EAD4D5216C8799005D2B83 /* FocusSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusSquare.m; sourceTree = "<group>"; };
+		71EAD4D7216C884F005D2B83 /* Segment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segment.h; sourceTree = "<group>"; };
+		71EAD4D8216C884F005D2B83 /* Segment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Segment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,18 +72,66 @@
 		71DBA6BE2159CCE600E6B93C /* ARKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				71DBA6DD2159CDC400E6B93C /* AdditionalViewController */,
+				71DBA6DC2159CDC400E6B93C /* FocusSquare */,
+				71DBA6DE2159CDC400E6B93C /* Utilities */,
+				71DBA6DF2159CDC400E6B93C /* VirtualObject */,
+				71DBA6D72159CD3E00E6B93C /* Resources */,
 				71DBA6BF2159CCE600E6B93C /* AppDelegate.h */,
 				71DBA6C02159CCE600E6B93C /* AppDelegate.m */,
-				71DBA6C22159CCE600E6B93C /* art.scnassets */,
 				71DBA6C42159CCE600E6B93C /* ViewController.h */,
 				71DBA6C52159CCE600E6B93C /* ViewController.m */,
 				71DBA6C72159CCE600E6B93C /* Main.storyboard */,
-				71DBA6CA2159CCE900E6B93C /* Assets.xcassets */,
 				71DBA6CC2159CCE900E6B93C /* LaunchScreen.storyboard */,
 				71DBA6CF2159CCE900E6B93C /* Info.plist */,
 				71DBA6D02159CCE900E6B93C /* main.m */,
 			);
 			path = ARKitDemo;
+			sourceTree = "<group>";
+		};
+		71DBA6D72159CD3E00E6B93C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71DBA6D82159CD3E00E6B93C /* Models.scnassets */,
+				71DBA6D92159CD3E00E6B93C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71DBA6DC2159CDC400E6B93C /* FocusSquare */ = {
+			isa = PBXGroup;
+			children = (
+				71EAD4D4216C8799005D2B83 /* FocusSquare.h */,
+				71EAD4D5216C8799005D2B83 /* FocusSquare.m */,
+				71EAD4D7216C884F005D2B83 /* Segment.h */,
+				71EAD4D8216C884F005D2B83 /* Segment.m */,
+			);
+			path = FocusSquare;
+			sourceTree = "<group>";
+		};
+		71DBA6DD2159CDC400E6B93C /* AdditionalViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdditionalViewController;
+			sourceTree = "<group>";
+		};
+		71DBA6DE2159CDC400E6B93C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71DBA6E32159DF5800E6B93C /* Utilities.h */,
+				71DBA6E42159DF5800E6B93C /* Utilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		71DBA6DF2159CDC400E6B93C /* VirtualObject */ = {
+			isa = PBXGroup;
+			children = (
+				71DBA6E02159CDDD00E6B93C /* VirtualObject.h */,
+				71DBA6E12159CDDD00E6B93C /* VirtualObject.m */,
+			);
+			path = VirtualObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71DBA6C32159CCE600E6B93C /* art.scnassets in Resources */,
+				71DBA6DA2159CD3E00E6B93C /* Models.scnassets in Resources */,
 				71DBA6CE2159CCE900E6B93C /* LaunchScreen.storyboard in Resources */,
-				71DBA6CB2159CCE900E6B93C /* Assets.xcassets in Resources */,
+				71DBA6DB2159CD3E00E6B93C /* Assets.xcassets in Resources */,
 				71DBA6C92159CCE600E6B93C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,9 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DBA6E22159CDDD00E6B93C /* VirtualObject.m in Sources */,
 				71DBA6C62159CCE600E6B93C /* ViewController.m in Sources */,
+				71EAD4D9216C884F005D2B83 /* Segment.m in Sources */,
 				71DBA6D12159CCE900E6B93C /* main.m in Sources */,
 				71DBA6C12159CCE600E6B93C /* AppDelegate.m in Sources */,
+				71DBA6E52159DF5800E6B93C /* Utilities.m in Sources */,
+				71EAD4D6216C8799005D2B83 /* FocusSquare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
